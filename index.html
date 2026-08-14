@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -220,6 +221,76 @@
       color: #888;
     }
 
+    /* ================= COMING SOON ================= */
+
+    .coming-soon {
+      aspect-ratio: 16 / 9;
+      background:
+        radial-gradient(circle at 50% 40%, #252525 0%, #111 45%, #080808 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .coming-soon::before {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border: 1px solid #333;
+      border-radius: 50%;
+      animation: pulse 3s ease-in-out infinite;
+    }
+
+    .coming-soon::after {
+      content: "";
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      border: 1px solid #222;
+      border-radius: 50%;
+      animation: pulse 3s ease-in-out infinite reverse;
+    }
+
+    .coming-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .coming-icon {
+      font-size: 40px;
+      margin-bottom: 12px;
+      opacity: 0.85;
+    }
+
+    .coming-content h3 {
+      font-size: 24px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+    }
+
+    .coming-content p {
+      color: #777;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(0.9);
+        opacity: 0.3;
+      }
+
+      50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+      }
+    }
+
     .contact {
       text-align: center;
       background: #101010;
@@ -283,6 +354,18 @@
 
       .section-title {
         font-size: 38px;
+      }
+
+      .coming-content h3 {
+        font-size: 19px;
+      }
+
+      .coming-content p {
+        font-size: 12px;
+      }
+
+      .coming-icon {
+        font-size: 32px;
       }
     }
   </style>
@@ -430,7 +513,7 @@
         </div>
 
         <h3>
-Documentary shoot
+          Documentary shoot
         </h3>
 
         <p>
@@ -544,13 +627,25 @@ Documentary shoot
 
         <div class="work">
 
-          <video controls playsinline preload="metadata">
+          <div class="coming-soon">
 
-            <source
-              src="./cinematic1.mp4"
-              type="video/mp4">
+            <div class="coming-content">
 
-          </video>
+              <div class="coming-icon">
+                🎬
+              </div>
+
+              <h3>
+                Coming Soon
+              </h3>
+
+              <p>
+                Cinematic projects are being prepared.
+              </p>
+
+            </div>
+
+          </div>
 
           <div class="work-info">
 
@@ -570,13 +665,25 @@ Documentary shoot
 
         <div class="work">
 
-          <video controls playsinline preload="metadata">
+          <div class="coming-soon">
 
-            <source
-              src="./cinematic2.mp4"
-              type="video/mp4">
+            <div class="coming-content">
 
-          </video>
+              <div class="coming-icon">
+                🎬
+              </div>
+
+              <h3>
+                Coming Soon
+              </h3>
+
+              <p>
+                Cinematic project in production.
+              </p>
+
+            </div>
+
+          </div>
 
           <div class="work-info">
 
@@ -628,7 +735,7 @@ Documentary shoot
             </h3>
 
             <p>
-Build to collect excuses
+              Build to collect excuses
             </p>
 
           </div>
@@ -653,7 +760,7 @@ Build to collect excuses
             </h3>
 
             <p>
-      Build to collect excuses  .
+              Build to collect excuses.
             </p>
 
           </div>
@@ -674,7 +781,7 @@ Build to collect excuses
       </div>
 
       <h2 class="section-title">
-Documentary shoot
+        Documentary shoot
       </h2>
 
       <div class="work-grid">
@@ -700,11 +807,16 @@ Documentary shoot
           <div class="work-info">
 
             <h3>
-             Documentary shoot
+              Documentary shoot
             </h3>
 
             <p>
-Every frame is thoughtfully crafted to present hospitals in the most authentic and impactful way, helping them connect with patients and the community. This film reflects our passion for storytelling and our commitment to creating meaningful, high-quality healthcare content that leaves a lasting impression.
+              Every frame is thoughtfully crafted to present
+              hospitals in the most authentic and impactful way,
+              helping them connect with patients and the community.
+              This film reflects our passion for storytelling and
+              our commitment to creating meaningful, high-quality
+              healthcare content that leaves a lasting impression.
             </p>
 
           </div>
@@ -725,18 +837,17 @@ Every frame is thoughtfully crafted to present hospitals in the most authentic a
               src="./v2.mp4"
               type="video/mp4">
 
-            Your browser does not support this video.
-
           </video>
 
           <div class="work-info">
 
             <h3>
-healthcare advice by doctors
+              Healthcare Advice by Doctors
             </h3>
 
             <p>
-             
+              Professional healthcare communication and
+              informative video content.
             </p>
 
           </div>
@@ -757,18 +868,17 @@ healthcare advice by doctors
               src="./v3.mp4"
               type="video/mp4">
 
-            Your browser does not support this video.
-
           </video>
 
           <div class="work-info">
 
             <h3>
-promoting Hospital services
+              Promoting Hospital Services
             </h3>
 
             <p>
-            
+              Creative promotional content designed
+              to highlight healthcare services.
             </p>
 
           </div>
@@ -789,24 +899,25 @@ promoting Hospital services
               src="./v4.mp4"
               type="video/mp4">
 
-            Your browser does not support this video.
-
           </video>
 
           <div class="work-info">
 
             <h3>
-local awareness and trust building video
+              Local Awareness & Trust Building
             </h3>
 
             <p>
-             A hospital is more than just a place for treatment—it's a trusted healthcare partner for every family. This local awareness video is thoughtfully created to showcase the hospital's facilities, medical services, experienced doctors, and patient-centered care, helping both nearby residents and people from surrounding areas become familiar with the healthcare they can trust. By creating a strong first impression, the video builds confidence and encourages viewers to choose the hospital whenever they need quality medical care. At our agency, we create impactful healthcare videos that strengthen community awareness, build trust, and help hospitals connect with a wider audience. Every story we produce is designed to leave a lasting positive impression and make quality healthcare more approachable, accessible, and trusted.
+              A hospital is more than just a place for treatment—
+              it's a trusted healthcare partner for every family.
+              This local awareness video showcases the hospital's
+              facilities, medical services, experienced doctors,
+              and patient-centered care.
             </p>
 
           </div>
 
         </div>
-
 
       </div>
 
@@ -829,13 +940,25 @@ local awareness and trust building video
 
         <div class="work">
 
-          <video controls playsinline preload="metadata">
+          <div class="coming-soon">
 
-            <source
-              src="./animation1.mp4"
-              type="video/mp4">
+            <div class="coming-content">
 
-          </video>
+              <div class="coming-icon">
+                ✦
+              </div>
+
+              <h3>
+                Coming Soon
+              </h3>
+
+              <p>
+                Animation projects are being prepared.
+              </p>
+
+            </div>
+
+          </div>
 
           <div class="work-info">
 
@@ -855,13 +978,25 @@ local awareness and trust building video
 
         <div class="work">
 
-          <video controls playsinline preload="metadata">
+          <div class="coming-soon">
 
-            <source
-              src="./animation2.mp4"
-              type="video/mp4">
+            <div class="coming-content">
 
-          </video>
+              <div class="coming-icon">
+                ✦
+              </div>
+
+              <h3>
+                Coming Soon
+              </h3>
+
+              <p>
+                Creative animation project in production.
+              </p>
+
+            </div>
+
+          </div>
 
           <div class="work-info">
 
