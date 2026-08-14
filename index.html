@@ -24,8 +24,6 @@
       line-height: 1.6;
     }
 
-    /* NAVIGATION */
-
     nav {
       display: flex;
       justify-content: space-between;
@@ -54,15 +52,12 @@
       color: white;
     }
 
-    /* HERO */
-
     .hero {
       min-height: 90vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 60px 8%;
-
       background:
         radial-gradient(circle at 80% 30%, #292929 0, transparent 35%),
         #080808;
@@ -103,8 +98,6 @@
       border-radius: 5px;
     }
 
-    /* GENERAL SECTIONS */
-
     section {
       padding: 90px 8%;
     }
@@ -113,8 +106,6 @@
       font-size: 45px;
       margin-bottom: 40px;
     }
-
-    /* ABOUT */
 
     .about {
       max-width: 800px;
@@ -135,8 +126,6 @@
       border-radius: 30px;
       color: #ccc;
     }
-
-    /* CATEGORY FOLDERS */
 
     .category-grid {
       display: grid;
@@ -175,8 +164,6 @@
       font-size: 14px;
     }
 
-    /* CATEGORY PAGES */
-
     .category-page {
       display: none;
     }
@@ -199,8 +186,6 @@
       color: white;
       border-color: #777;
     }
-
-    /* VIDEO GRID */
 
     .work-grid {
       display: grid;
@@ -235,8 +220,6 @@
       color: #888;
     }
 
-    /* CONTACT */
-
     .contact {
       text-align: center;
       background: #101010;
@@ -266,16 +249,12 @@
       color: white;
     }
 
-    /* FOOTER */
-
     footer {
       text-align: center;
       padding: 30px;
       color: #666;
       border-top: 1px solid #222;
     }
-
-    /* MOBILE */
 
     @media (max-width: 600px) {
 
@@ -305,684 +284,701 @@
       .section-title {
         font-size: 38px;
       }
-
     }
-
   </style>
 </head>
 
-
 <body>
 
+  <!-- ================= NAVIGATION ================= -->
 
-<!-- ================= NAVIGATION ================= -->
+  <nav>
 
-<nav>
+    <div class="logo">
+      FREELANCE WORK CG
+    </div>
 
-  <div class="logo">
-    FREELANCE WORK CG
-  </div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
 
-  <div>
-    <a href="#about">About</a>
-    <a href="#work">Work</a>
-    <a href="#contact">Contact</a>
-  </div>
-
-</nav>
-
-
-<!-- ================= HERO ================= -->
-
-<section class="hero">
-
-  <div class="tag">
-    Video Editing • Creative • Visuals
-  </div>
-
-  <h1>
-    FREELANCE<br>
-    <span>WORK CG</span>
-  </h1>
-
-  <p>
-    Professional video editing focused on creating engaging,
-    modern and impactful visual content.
-  </p>
-
-  <a class="button" href="#work">
-    View My Work
-  </a>
-
-</section>
+  </nav>
 
 
-<!-- ================= ABOUT ================= -->
+  <!-- ================= HERO ================= -->
 
-<section id="about">
+  <section class="hero">
 
-  <h2 class="section-title">
-    About Me
-  </h2>
+    <div class="tag">
+      Video Editing • Creative • Visuals
+    </div>
 
-  <p class="about">
-    Welcome to FREELANCE WORK CG. I create engaging video
-    content through creative editing, clean visuals, strong
-    pacing and attention to detail.
-  </p>
+    <h1>
+      FREELANCE<br>
+      <span>WORK CG</span>
+    </h1>
 
-  <div class="skills">
+    <p>
+      Professional video editing focused on creating engaging,
+      modern and impactful visual content.
+    </p>
 
-    <div class="skill">Video Editing</div>
-    <div class="skill">Short Form Videos</div>
-    <div class="skill">Reels</div>
-    <div class="skill">YouTube Editing</div>
-    <div class="skill">Color & Visuals</div>
+    <a class="button" href="#work">
+      View My Work
+    </a>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- ================= MY WORK ================= -->
+  <!-- ================= ABOUT ================= -->
 
-<section id="work">
+  <section id="about">
 
-  <h2 class="section-title">
-    My Editing Work
-  </h2>
+    <h2 class="section-title">
+      About Me
+    </h2>
+
+    <p class="about">
+      Welcome to FREELANCE WORK CG. I create engaging video
+      content through creative editing, clean visuals, strong
+      pacing and attention to detail.
+    </p>
+
+    <div class="skills">
+
+      <div class="skill">Video Editing</div>
+      <div class="skill">Short Form Videos</div>
+      <div class="skill">Reels</div>
+      <div class="skill">YouTube Editing</div>
+      <div class="skill">Color & Visuals</div>
+
+    </div>
+
+  </section>
 
 
-  <!-- CATEGORY FOLDERS -->
+  <!-- ================= MY WORK ================= -->
 
-  <div id="categories" class="category-grid">
+  <section id="work">
+
+    <h2 class="section-title">
+      My Editing Work
+    </h2>
 
 
-    <!-- CULTURE -->
+    <!-- CATEGORY FOLDERS -->
 
-    <div
-      class="folder"
-      onclick="openCategory('culture')">
+    <div id="categories" class="category-grid">
 
-      <div class="folder-icon">
-        📁
+      <div class="folder" onclick="openCategory('culture')">
+
+        <div class="folder-icon">
+          📁
+        </div>
+
+        <h3>
+          Culture
+        </h3>
+
+        <p>
+          Cultural & traditional video edits
+        </p>
+
       </div>
 
-      <h3>
+
+      <div class="folder" onclick="openCategory('cinematic')">
+
+        <div class="folder-icon">
+          📁
+        </div>
+
+        <h3>
+          Cinematic
+        </h3>
+
+        <p>
+          Cinematic storytelling & visuals
+        </p>
+
+      </div>
+
+
+      <div class="folder" onclick="openCategory('cars')">
+
+        <div class="folder-icon">
+          📁
+        </div>
+
+        <h3>
+          Car Edits
+        </h3>
+
+        <p>
+          Automotive & car edits
+        </p>
+
+      </div>
+
+
+      <div class="folder" onclick="openCategory('promotion')">
+
+        <div class="folder-icon">
+          📁
+        </div>
+
+        <h3>
+Documentary shoot
+        </h3>
+
+        <p>
+          Brand & promotional videos
+        </p>
+
+      </div>
+
+
+      <div class="folder" onclick="openCategory('animation')">
+
+        <div class="folder-icon">
+          📁
+        </div>
+
+        <h3>
+          Animation Edit
+        </h3>
+
+        <p>
+          Motion graphics & animation
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- ================= CULTURE ================= -->
+
+    <div id="culture" class="category-page">
+
+      <div class="back-button" onclick="goBack()">
+        ← Back to Categories
+      </div>
+
+      <h2 class="section-title">
         Culture
-      </h3>
+      </h2>
 
-      <p>
-        Cultural & traditional video edits
-      </p>
+      <div class="work-grid">
+
+        <div class="work">
+
+          <video controls playsinline preload="metadata">
+
+            <source
+              src="./handcraft.mp4"
+              type="video/mp4">
+
+          </video>
+
+          <div class="work-info">
+
+            <h3>
+              Hand Craft
+            </h3>
+
+            <p>
+              Cultural storytelling and creative
+              video editing project.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="work">
+
+          <video controls playsinline preload="metadata">
+
+            <source
+              src="./handcraft2.mp4"
+              type="video/mp4">
+
+          </video>
+
+          <div class="work-info">
+
+            <h3>
+              Traditional Visuals
+            </h3>
+
+            <p>
+              Cultural visual storytelling edit.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
 
 
-    <!-- CINEMATIC -->
+    <!-- ================= CINEMATIC ================= -->
 
-    <div
-      class="folder"
-      onclick="openCategory('cinematic')">
+    <div id="cinematic" class="category-page">
 
-      <div class="folder-icon">
-        📁
+      <div class="back-button" onclick="goBack()">
+        ← Back to Categories
       </div>
 
-      <h3>
+      <h2 class="section-title">
         Cinematic
-      </h3>
+      </h2>
 
-      <p>
-        Cinematic storytelling & visuals
-      </p>
+      <div class="work-grid">
+
+        <div class="work">
+
+          <video controls playsinline preload="metadata">
+
+            <source
+              src="./cinematic1.mp4"
+              type="video/mp4">
+
+          </video>
+
+          <div class="work-info">
+
+            <h3>
+              Cinematic Edit
+            </h3>
+
+            <p>
+              Cinematic storytelling with
+              creative transitions and color.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="work">
+
+          <video controls playsinline preload="metadata">
+
+            <source
+              src="./cinematic2.mp4"
+              type="video/mp4">
+
+          </video>
+
+          <div class="work-info">
+
+            <h3>
+              Visual Story
+            </h3>
+
+            <p>
+              Cinematic visual editing project.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
 
 
-    <!-- CAR EDITS -->
+    <!-- ================= CAR EDITS ================= -->
 
-    <div
-      class="folder"
-      onclick="openCategory('cars')">
+    <div id="cars" class="category-page">
 
-      <div class="folder-icon">
-        📁
+      <div class="back-button" onclick="goBack()">
+        ← Back to Categories
       </div>
 
-      <h3>
+      <h2 class="section-title">
         Car Edits
-      </h3>
+      </h2>
 
-      <p>
-        Automotive & car edits
-      </p>
+      <div class="work-grid">
+
+        <div class="work">
+
+          <video controls playsinline preload="metadata">
+
+            <source
+              src="./car.mp4"
+              type="video/mp4">
+
+          </video>
+
+          <div class="work-info">
+
+            <h3>
+              Car Edit
+            </h3>
+
+            <p>
+Build to collect excuses
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="work">
+
+          <video controls playsinline preload="metadata">
+
+            <source
+              src="./car1.mp4"
+              type="video/mp4">
+
+          </video>
+
+          <div class="work-info">
+
+            <h3>
+              Car Cinematic
+            </h3>
+
+            <p>
+      Build to collect excuses  .
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
 
 
-    <!-- PROMOTION -->
+    <!-- ================= PROMOTION ================= -->
 
-    <div
-      class="folder"
-      onclick="openCategory('promotion')">
+    <div id="promotion" class="category-page">
 
-      <div class="folder-icon">
-        📁
+      <div class="back-button" onclick="goBack()">
+        ← Back to Categories
       </div>
 
-      <h3>
-        Promotion Edit
-      </h3>
+      <h2 class="section-title">
+Documentary shoot
+      </h2>
 
-      <p>
-        Brand & promotional videos
-      </p>
+      <div class="work-grid">
+
+
+        <!-- V.mp4 -->
+
+        <div class="work">
+
+          <video
+            controls
+            playsinline
+            preload="metadata">
+
+            <source
+              src="./v.mp4"
+              type="video/mp4">
+
+            Your browser does not support this video.
+
+          </video>
+
+          <div class="work-info">
+
+            <h3>
+             Documentary shoot
+            </h3>
+
+            <p>
+Every frame is thoughtfully crafted to present hospitals in the most authentic and impactful way, helping them connect with patients and the community. This film reflects our passion for storytelling and our commitment to creating meaningful, high-quality healthcare content that leaves a lasting impression.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- V2.mp4 -->
+
+        <div class="work">
+
+          <video
+            controls
+            playsinline
+            preload="metadata">
+
+            <source
+              src="./v2.mp4"
+              type="video/mp4">
+
+            Your browser does not support this video.
+
+          </video>
+
+          <div class="work-info">
+
+            <h3>
+healthcare advice by doctors
+            </h3>
+
+            <p>
+             
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- V3.mp4 -->
+
+        <div class="work">
+
+          <video
+            controls
+            playsinline
+            preload="metadata">
+
+            <source
+              src="./v3.mp4"
+              type="video/mp4">
+
+            Your browser does not support this video.
+
+          </video>
+
+          <div class="work-info">
+
+            <h3>
+promoting Hospital services
+            </h3>
+
+            <p>
+            
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- V4.mp4 -->
+
+        <div class="work">
+
+          <video
+            controls
+            playsinline
+            preload="metadata">
+
+            <source
+              src="./v4.mp4"
+              type="video/mp4">
+
+            Your browser does not support this video.
+
+          </video>
+
+          <div class="work-info">
+
+            <h3>
+local awareness and trust building video
+            </h3>
+
+            <p>
+             A hospital is more than just a place for treatment—it's a trusted healthcare partner for every family. This local awareness video is thoughtfully created to showcase the hospital's facilities, medical services, experienced doctors, and patient-centered care, helping both nearby residents and people from surrounding areas become familiar with the healthcare they can trust. By creating a strong first impression, the video builds confidence and encourages viewers to choose the hospital whenever they need quality medical care. At our agency, we create impactful healthcare videos that strengthen community awareness, build trust, and help hospitals connect with a wider audience. Every story we produce is designed to leave a lasting positive impression and make quality healthcare more approachable, accessible, and trusted.
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
 
     </div>
 
 
-    <!-- ANIMATION -->
+    <!-- ================= ANIMATION ================= -->
 
-    <div
-      class="folder"
-      onclick="openCategory('animation')">
+    <div id="animation" class="category-page">
 
-      <div class="folder-icon">
-        📁
+      <div class="back-button" onclick="goBack()">
+        ← Back to Categories
       </div>
 
-      <h3>
+      <h2 class="section-title">
         Animation Edit
-      </h3>
+      </h2>
 
-      <p>
-        Motion graphics & animation
-      </p>
+      <div class="work-grid">
+
+        <div class="work">
+
+          <video controls playsinline preload="metadata">
+
+            <source
+              src="./animation1.mp4"
+              type="video/mp4">
+
+          </video>
+
+          <div class="work-info">
+
+            <h3>
+              Motion Graphics
+            </h3>
+
+            <p>
+              Motion graphics and animation
+              editing project.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="work">
+
+          <video controls playsinline preload="metadata">
+
+            <source
+              src="./animation2.mp4"
+              type="video/mp4">
+
+          </video>
+
+          <div class="work-info">
+
+            <h3>
+              Creative Animation
+            </h3>
+
+            <p>
+              Creative animation and motion
+              design project.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
 
+  </section>
 
-  </div>
 
+  <!-- ================= CONTACT ================= -->
 
-  <!-- ================= CULTURE ================= -->
-
-  <div id="culture" class="category-page">
-
-    <div
-      class="back-button"
-      onclick="goBack()">
-
-      ← Back to Categories
-
-    </div>
+  <section id="contact" class="contact">
 
     <h2 class="section-title">
-      Culture
+      Let's Work Together
     </h2>
 
-    <div class="work-grid">
+    <p>
+      Have a project in mind?
+      Get in touch with FREELANCE WORK CG.
+    </p>
 
+    <div class="contact-info">
 
-      <div class="work">
+      <a href="mailto:freelanceworkkcg@gmail.com">
+        📧 freelanceworkkcg@gmail.com
+      </a>
 
-        <video controls playsinline>
-
-          <source
-            src="culture1.mp4"
-            type="video/mp4">
-
-        </video>
-
-        <div class="work-info">
-
-          <h3>
-            Hand Craft
-          </h3>
-
-          <p>
-            Cultural storytelling and creative
-            video editing project.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="work">
-
-        <video controls playsinline>
-
-          <source
-            src="culture2.mp4"
-            type="video/mp4">
-
-        </video>
-
-        <div class="work-info">
-
-          <h3>
-            Traditional Visuals
-          </h3>
-
-          <p>
-            Cultural visual storytelling edit.
-          </p>
-
-        </div>
-
-      </div>
-
+      <a href="tel:6264650519">
+        📞 6264650519
+      </a>
 
     </div>
 
-  </div>
+    <a
+      class="button"
+      href="mailto:freelanceworkkcg@gmail.com">
 
+      Contact Me
 
-  <!-- ================= CINEMATIC ================= -->
-
-  <div id="cinematic" class="category-page">
-
-    <div
-      class="back-button"
-      onclick="goBack()">
-
-      ← Back to Categories
-
-    </div>
-
-    <h2 class="section-title">
-      Cinematic
-    </h2>
-
-    <div class="work-grid">
-
-
-      <div class="work">
-
-        <video controls playsinline>
-
-          <source
-            src="cinematic1.mp4"
-            type="video/mp4">
-
-        </video>
-
-        <div class="work-info">
-
-          <h3>
-            Cinematic Edit
-          </h3>
-
-          <p>
-            Cinematic storytelling with
-            creative transitions and color.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="work">
-
-        <video controls playsinline>
-
-          <source
-            src="cinematic2.mp4"
-            type="video/mp4">
-
-        </video>
-
-        <div class="work-info">
-
-          <h3>
-            Visual Story
-          </h3>
-
-          <p>
-            Cinematic visual editing project.
-          </p>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-
-  <!-- ================= CAR EDITS ================= -->
-
-  <div id="cars" class="category-page">
-
-    <div
-      class="back-button"
-      onclick="goBack()">
-
-      ← Back to Categories
-
-    </div>
-
-    <h2 class="section-title">
-      Car Edits
-    </h2>
-
-    <div class="work-grid">
-
-
-      <div class="work">
-
-        <video controls playsinline>
-
-          <source
-            src="video2.mp4"
-            type="video/mp4">
-
-        </video>
-
-        <div class="work-info">
-
-          <h3>
-            Car Wash Edit
-          </h3>
-
-          <p>
-            Automotive video editing project
-            by FREELANCE WORK CG.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="work">
-
-        <video controls playsinline>
-
-          <source
-            src="car2.mp4"
-            type="video/mp4">
-
-        </video>
-
-        <div class="work-info">
-
-          <h3>
-            Car Cinematic
-          </h3>
-
-          <p>
-            Cinematic automotive editing project.
-          </p>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-
-  <!-- ================= PROMOTION ================= -->
-
-  <div id="promotion" class="category-page">
-
-    <div
-      class="back-button"
-      onclick="goBack()">
-
-      ← Back to Categories
-
-    </div>
-
-    <h2 class="section-title">
-      Promotion Edit
-    </h2>
-
-    <div class="work-grid">
-
-
-      <div class="work">
-
-        <video controls playsinline>
-
-          <source
-            src="promotion1.mp4"
-            type="video/mp4">
-
-        </video>
-
-        <div class="work-info">
-
-          <h3>
-            Brand Promotion
-          </h3>
-
-          <p>
-            Promotional video designed to
-            showcase a product or brand.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="work">
-
-        <video controls playsinline>
-
-          <source
-            src="promotion2.mp4"
-            type="video/mp4">
-
-        </video>
-
-        <div class="work-info">
-
-          <h3>
-            Product Showcase
-          </h3>
-
-          <p>
-            Modern promotional editing project.
-          </p>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-
-  <!-- ================= ANIMATION ================= -->
-
-  <div id="animation" class="category-page">
-
-    <div
-      class="back-button"
-      onclick="goBack()">
-
-      ← Back to Categories
-
-    </div>
-
-    <h2 class="section-title">
-      Animation Edit
-    </h2>
-
-    <div class="work-grid">
-
-
-      <div class="work">
-
-        <video controls playsinline>
-
-          <source
-            src="animation1.mp4"
-            type="video/mp4">
-
-        </video>
-
-        <div class="work-info">
-
-          <h3>
-            Motion Graphics
-          </h3>
-
-          <p>
-            Motion graphics and animation
-            editing project.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="work">
-
-        <video controls playsinline>
-
-          <source
-            src="animation2.mp4"
-            type="video/mp4">
-
-        </video>
-
-        <div class="work-info">
-
-          <h3>
-            Creative Animation
-          </h3>
-
-          <p>
-            Creative animation and motion
-            design project.
-          </p>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-
-</section>
-
-
-<!-- ================= CONTACT ================= -->
-
-<section id="contact" class="contact">
-
-  <h2 class="section-title">
-    Let's Work Together
-  </h2>
-
-  <p>
-    Have a project in mind?
-    Get in touch with FREELANCE WORK CG.
-  </p>
-
-
-  <div class="contact-info">
-
-    <a href="mailto:freelanceworkkcg@gmail.com">
-      📧 freelanceworkkcg@gmail.com
     </a>
 
-    <a href="tel:6264650519">
-      📞 6264650519
-    </a>
-
-  </div>
+  </section>
 
 
-  <a
-    class="button"
-    href="mailto:freelanceworkkcg@gmail.com">
+  <!-- ================= FOOTER ================= -->
 
-    Contact Me
+  <footer>
 
-  </a>
+    © 2026 FREELANCE WORK CG.
+    All Rights Reserved.
 
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-  © 2026 FREELANCE WORK CG.
-  All Rights Reserved.
-
-</footer>
+  </footer>
 
 
-<!-- ================= JAVASCRIPT ================= -->
+  <!-- ================= JAVASCRIPT ================= -->
 
-<script>
+  <script>
 
-function openCategory(category) {
+    function openCategory(category) {
 
-  document.getElementById("categories").style.display = "none";
+      document.getElementById("categories").style.display = "none";
 
-  document
-    .querySelectorAll(".category-page")
-    .forEach(function(page) {
+      document
+        .querySelectorAll(".category-page")
+        .forEach(function(page) {
 
-      page.classList.remove("active");
+          page.classList.remove("active");
 
-    });
+        });
 
-  document
-    .getElementById(category)
-    .classList.add("active");
+      document
+        .getElementById(category)
+        .classList.add("active");
 
-  window.scrollTo({
-    top: document.getElementById("work").offsetTop - 70,
-    behavior: "smooth"
-  });
+      window.scrollTo({
+        top: document.getElementById("work").offsetTop - 70,
+        behavior: "smooth"
+      });
 
-}
+    }
 
 
-function goBack() {
+    function goBack() {
 
-  document
-    .querySelectorAll(".category-page")
-    .forEach(function(page) {
+      document
+        .querySelectorAll(".category-page")
+        .forEach(function(page) {
 
-      page.classList.remove("active");
+          page.classList.remove("active");
 
-    });
+        });
 
-  document.getElementById("categories").style.display = "grid";
+      document.getElementById("categories").style.display = "grid";
 
-  window.scrollTo({
-    top: document.getElementById("work").offsetTop - 70,
-    behavior: "smooth"
-  });
+      window.scrollTo({
+        top: document.getElementById("work").offsetTop - 70,
+        behavior: "smooth"
+      });
 
-}
+    }
 
-</script>
-
+  </script>
 
 </body>
 </html>
-
